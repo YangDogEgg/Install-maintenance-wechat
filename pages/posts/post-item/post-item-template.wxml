@@ -1,0 +1,17 @@
+<template name="postItem">
+  <view class='new-container'>
+    <view class='new-head-date'>
+      <image class='new-head' src='{{head}}'></image>
+      <text class='new-date'>{{date}}</text>
+    </view>
+    <text class='new-title'>{{title}}</text>
+    <image class='new-image' src='{{new_image}}'></image>
+    <text class='new-content'>{{content}}</text>
+    <view class='new-like'>
+      <image class='new-like-image' src='/images/shoucang.png'></image>
+      <text class='new-like-font'>{{view_num}}</text>
+      <image class='new-like-image' src='/images/pinglun.png'></image>
+      <text class='new-like-font'>{{collect_num}}</text>
+    </view>
+  </view>
+</template>

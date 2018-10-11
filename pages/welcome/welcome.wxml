@@ -1,0 +1,7 @@
+<view class='container'>
+  <image src="/images/head.png" class='head'></image>
+  <text class='user-name'>Hello，杨师傅</text>
+  <view class='button' bindtap='onTop'>
+    <text class='text'>开启小程序之旅</text>
+  </view>
+</view>

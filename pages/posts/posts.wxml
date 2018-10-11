@@ -1,0 +1,19 @@
+<import src="post-item/post-item-template.wxml" />
+<view>
+  <swiper class='swiper' indicator-dots='true' autoplay='true' interval='5000'>
+    <swiper-item>
+      <image src='/images/flower1.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/flower2.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/flower3.jpg'></image>
+    </swiper-item>
+  </swiper>
+</view>
+<block wx:for="{{news_key}}" wx:key="key" wx:for-item="news">
+  <view catchtap='onNewsTap' data-newsId='{{news.newsId}}' data-newsTitle='{{news.Title}}'>
+    <template is="postItem" data="{{...news}}" />
+  </view>
+</block>

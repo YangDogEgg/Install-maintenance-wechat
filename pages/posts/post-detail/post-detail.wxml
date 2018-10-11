@@ -1,0 +1,20 @@
+<view class='container'>
+  <image class='head-image' src='{{newData.headImgSrc}}'></image>
+  <image class='play-image' src='/images/play.png'></image>
+  <view class='author-date'>
+    <image class='avatar' src='{{newData.head}}'></image>
+    <text class='author'>{{newData.author}}</text>
+    <text class='const_text'>发表于</text>
+    <text class='date'>{{newData.dateTime}}</text>
+  </view>
+  <text class='title'>{{newData.title}}</text>
+  <view class='tool'>
+    <view class='circlr-img'>
+      <image src='/images/save.png'></image>
+      <image class='share-img' src='/images/share.png'></image>
+    </view>
+    <view class='horizon'>
+    </view>
+  </view>
+  <text class='detail'>{{newData.detail}}</text>
+</view>
